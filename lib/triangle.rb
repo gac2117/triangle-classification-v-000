@@ -23,7 +23,7 @@ class Triangle
     [side1, side2, side3].each {|side| real << false if side <= 0}
     raise TriangleError if real.include?(false)
   end
-    
+
 
   class TriangleError < StandardError
   end
