@@ -12,7 +12,7 @@ class Triangle
       :equilateral
     elsif side1 == side2 || side2 == side3 || side3 == side1
       :isosceles
-    elsif side1 != side2 != side3
+    elsif
       :scalene
     else
       raise TriangleError
