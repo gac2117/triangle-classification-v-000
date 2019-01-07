@@ -19,7 +19,7 @@ class Triangle
   end
 
   def real_triangle
-    real = [(side1 + side2 > side3), (side2 + side3 < side1), (side3 + side1 > side2)]
+    real = [(side1 + side2 > side3), (side2 + side3 > side1), (side3 + side1 > side2)]
     [side1, side2, side3].each {|side| real << false if side <= 0}
     raise TriangleError if real.include?(false)
   end
